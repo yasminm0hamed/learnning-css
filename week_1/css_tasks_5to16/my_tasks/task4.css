@@ -1,0 +1,42 @@
+.element-element-1{
+    border: red solid 6px;
+    box-shadow:0 0 0 6px rgb(44, 42, 42)  ;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.element-element-2{
+    border-color:  blue green ;
+    border-width: 6px;
+   border-style: solid;
+    box-shadow:0 0 0 6px rgb(44, 42, 42)  ;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.element-element-3{
+    border-color:  red ;
+    border-width: 6px;
+   border-style: dashed;
+    box-shadow:0 0 0 6px rgb(44, 42, 42)  ;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading-p {
+border-left:rgb(189, 30, 128)  solid 6px;
+padding-left: 10px;
+}
+
+.heading-g {
+border-left:rgb(19, 134, 115)  solid 6px;
+padding-left: 10px;
+}

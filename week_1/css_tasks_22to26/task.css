@@ -1,0 +1,56 @@
+.text{
+    width: 50%;
+    border: 2px solid rgb(52, 86, 40);
+    text-align: center;
+    padding: 10px 40px;
+    margin: auto;
+}
+p{
+    border:inherit;
+    padding:inherit;
+}
+
+.sans, .cairo, .Jomhuria{
+    
+   
+    text-align: center;
+    margin: 10px;
+    text-transform: capitalize;
+
+}
+
+.sans{
+    font-weight: 300;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cairo{
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+}
+
+.Jomhuria{
+    font-family:"Jomhuria", serif;
+    font-weight: 400;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+.text1,.text2,.text3{
+    text-align: center;
+   text-transform: capitalize;
+}
+.text1{
+    font-size: 5rem;
+}
+
+.text2{
+    font-size: 4rem;
+}
+
+.text3{
+    font-size: 3rem;
+}

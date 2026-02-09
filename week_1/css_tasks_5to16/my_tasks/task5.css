@@ -1,0 +1,31 @@
+.parent .child span{
+    color:red
+}
+
+.parent .title{
+    color:blue
+}
+
+.parent p,.title{
+    color:green
+}
+
+.word{
+    max-width: 400px;
+    max-height: 30px;
+    width: fit-content;
+    color: rgb(215, 213, 213);
+    background-color: brown;
+    margin: 20px;
+    padding: 20px;
+}
+.extra-word{
+    max-width: 400px;
+    max-height: 30px;
+    color: rgb(198, 198, 198);
+    background-color: brown;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    
+}
