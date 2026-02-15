@@ -1,0 +1,93 @@
+
+.one ,.two,.three{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+  margin-right: auto;
+}
+.one ,.three{
+  background-color: rgb(225, 225, 225);
+  padding: 20px ;
+}
+.two{
+    background-color: red;
+   padding: 10px 20px ;
+    height: 55px;
+}
+.text{
+   background-color: rgb(225, 225, 225);
+   padding: 20px ;
+   position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text span{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    padding: 10px;
+    position:absolute;
+    left:-15px;
+    bottom:10px
+    
+}
+
+.name{
+    background-color: rgb(225, 225, 225); 
+    padding:20px ;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-left: 5px solid rgb(255, 6, 151);
+
+}
+
+.name::before{
+    content:"";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-width: 10px;
+    border-style: solid ;
+    border-color: transparent rgb(255, 6, 151) transparent transparent;
+    left:-24px;
+}
+
+.name::after{
+    position: absolute;
+    content:attr(data-person);
+    display:inline-block;
+    left:-90px;
+    background-color: darkgrey;
+    padding:10px;
+    bottom: 10px;
+}
+
+.count{
+    counter-reset: numbers;
+}
+.comment{
+   position: relative;
+   background-color: rgb(209, 206, 206);
+    padding:11px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right:  rgb(245, 43, 43) 5px solid;
+}   
+
+.comment::before{
+   position: absolute;
+   counter-increment: numbers;
+    content:counter(numbers);
+    background-color: rgb(245, 43, 43);
+    color: aliceblue;
+    padding:11px 15px;
+    font-weight: bold;
+    bottom:0;
+   left:-30px
+}
+

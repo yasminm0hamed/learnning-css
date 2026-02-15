@@ -1,0 +1,58 @@
+body{
+    padding:0;
+    margin:0;
+}
+caption{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding:10px;
+}
+table {
+    background-color: rgb(207, 203, 203);
+    border-collapse: collapse;
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th , td{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(49, 48, 48);
+    color: white;
+
+}
+
+.image{
+    padding:5px 25px;
+    width: 50px; 
+}
+
+.Points{
+width: 70px; 
+}
+
+.blue,.pink{
+    width: 60px;
+    height: 30px;
+    
+    color: rgb(255, 255, 255);
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.pink{
+    background-color: rgb(217, 29, 132);
+}
+.blue{
+    background-color:rgb(46, 154, 216) ;
+}

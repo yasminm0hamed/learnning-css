@@ -1,0 +1,31 @@
+.green,.red,.blue,.black{
+width:100px ;
+height: 100px;
+position: absolute;
+}
+
+.black{
+    background-color: rgb(27, 25, 25);
+    z-index: -1;
+    top:30px;
+}
+
+.blue{
+    background-color: rgba(42, 180, 239, 0.963);
+    z-index: 1;
+    top: 20px;
+}
+
+.green{
+    background-color: rgb(40, 136, 118);
+    z-index:2 ;
+    top:30px;
+    left:20px;
+}
+
+.red{
+    background-color: rgb(198, 37, 37);
+    z-index: 3;
+    top:40px;
+    left:30px;
+}

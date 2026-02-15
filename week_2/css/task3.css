@@ -1,0 +1,44 @@
+body{
+    padding:0;
+    margin: 0;
+}
+.list{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px 10px;
+}
+
+.text1,.text2,.text3{
+    list-style: none;
+
+}
+
+.text1 .first,
+.text2 .second,
+.text3 .third{
+    padding-left:30px;
+}
+.text1 .first li,
+.text2 .second li,
+.text3 .third li{
+    background-color: ivory;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.text3 .third{ 
+    list-style-position: inside;
+}
+
+.list .text1,
+.list .text2,
+.list .text3
+{
+    background-color: rgba(182, 120, 28, 0.651);
+    padding: 10px;
+    margin: 10px;
+}
+
