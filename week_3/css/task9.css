@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 600px;
+    margin:auto;
+    font-size:larger;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: rgb(201, 201, 201);
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+   
+}
+div::first-letter{
+    color: red;
+}
+
+div::before{
+    content:"";
+    position:absolute;
+    width: 620px;
+    height:80px;
+    z-index: -1;
+    background-color: blue;
+    top:-10px;
+    left:-10px;
+    background-image: linear-gradient(to right,red 120px,blue 120px,blue 240px,green 240px, green 360px,pink 360px,pink 480px,rgb(124, 9, 191)480px);
+}

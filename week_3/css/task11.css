@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid {
+  background-color: hsl(0, 0%, 87%);
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 50px auto;
+  gap: 10px 10px;
+  counter-reset: num;
+  font-weight: bold;
+  
+}
+
+.grid div {
+    background-color: rgb(89, 130, 148);
+    display: flex;
+    justify-content: center;    
+    align-items: center;   
+    counter-increment: num;
+    position: relative;
+}
+
+ .grid div::before{
+    content: "Element ";
+    position: absolute;
+    color: aliceblue;
+    
+}
+.grid div::after{
+  content:  counter(num);
+  position: absolute;
+  color: white;
+  left:155px
+}

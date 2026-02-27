@@ -1,0 +1,28 @@
+.parent{
+    width:600px ;
+    height: 300px;
+    margin:auto;
+    display: flex;
+    justify-content:space-around;
+   
+    background-color: rgb(206, 206, 206);
+    flex-direction: column;
+}
+.one ,.two,.three{
+    height:calc(260px / 3);
+    background-color: rgb(11, 139, 126);
+    color: aliceblue;
+    text-align: center;
+   align-content: center;
+}
+
+.one,.three{
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.two{
+    width: 50%;
+    margin-left: 5px;
+}

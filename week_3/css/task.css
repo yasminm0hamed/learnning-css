@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.parent{
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: rgb(161, 160, 160);
+    padding-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+  
+}
+
+.child{
+    padding:10px;
+    background-color: rgb(101, 103, 102);
+    width:420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+   padding-top:20px;
+   padding-bottom: 20px;
+   transition: 0.5s 0.5s;
+}
+.parent:hover{
+    margin-top:20px;
+}
+.parent:hover .child{
+    margin-top: 40px;
+}

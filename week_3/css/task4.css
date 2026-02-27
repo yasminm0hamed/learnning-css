@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+.parent{
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    
+}
+ .parent div{
+    background-color: rgb(237, 23, 23);
+    color:aliceblue;
+    text-align: center;
+    width: 190px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}

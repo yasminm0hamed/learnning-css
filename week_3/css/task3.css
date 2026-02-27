@@ -1,0 +1,35 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230, 84, 0);
+    font-weight: bold;
+    background-color: rgb(251, 249, 249);
+    border-radius: 50%;
+    position: relative;
+}
+ div::after{
+    content:"";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(230, 84, 0);
+    border-radius: 50%;
+    position:absolute;
+    z-index: -1;
+    left:5px;
+ }
+
+ div::before{
+    content:"";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 163, 232);
+    border-radius: 50%;
+    position:absolute;
+    z-index: -1;
+    right:5px;
+ }

@@ -1,0 +1,40 @@
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(221, 222, 224);
+}
+
+.one,.two,.three,.four{
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+    height: 140px;
+    width: calc(410px / 4);
+}
+
+.one{
+    order:2;
+    margin-top: 5px; 
+    background-color: rgb(231, 146, 27);
+}
+.two{
+    order:3;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    background-color: rgb(122, 190, 77);
+}
+.three{
+    order:4;
+    margin-top: 5px; 
+    margin-right: 5px;
+    background-color: rgb(88, 64, 32);
+}
+.four{
+    align-self: flex-end;
+    margin-bottom: 5px;
+     margin-left: 5px;
+    background-color: blueviolet;
+}
