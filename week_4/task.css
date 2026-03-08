@@ -1,0 +1,32 @@
+div{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    color:rgb(15, 157, 245);
+    background-color: rgb(227, 226, 226);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+div::after{
+    content:"";
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(15, 157, 245);
+    z-index: -1;
+    transform: rotate(5deg);
+}
+div::before{
+    content:"";
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(191, 0, 92);
+    z-index: -1;
+    transform: rotate(-5deg);
+}

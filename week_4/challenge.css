@@ -1,0 +1,171 @@
+/* يتم الندم اني مدخلتش بيطري  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:rgb(36, 36, 36);
+    --sec-color:rgb(254, 153, 11);
+    --main-margin:20px;
+    --dash-width: 200px;
+    --dash-height: 40px;
+    --gap: 100px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgb(254, 153, 11),black);
+}
+
+ .container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:var(--gap);
+    
+ }
+
+ .E_letter{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: var(--gap);
+    position: relative;
+}
+
+.E_letter::before{
+    content: "";
+    position: absolute;
+    width: 40px; 
+    height: calc(3 * var(--dash-height) + 2 * var(--gap));
+    background-color: var(--main-color);
+    left: 0;
+    top: 0;
+}
+
+.E_letter .dash{
+    width: var(--dash-width);
+    height: var(--dash-height);
+    background-color: var(--main-color);
+}
+
+
+.L_letter{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: var(--gap);
+    position: relative;
+}
+
+.L_letter::before{
+    content: "";
+    position: absolute;
+    width: 40px; 
+    height: calc(3 * var(--dash-height) + 2 * var(--gap));
+    background-color: var(--main-color);
+    left: 0;
+    top: 0;
+}
+
+.L_letter .dash{
+    width: var(--dash-width);
+    height: var(--dash-height);
+    background-color: var(--main-color);
+
+}
+
+.L_letter .dash:first-child{
+    grid-row: 3;
+    align-self: self-end;
+
+}
+  /* -------------------------------------------- */
+
+.L_letter .square2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--sec-color);
+    right: 0;
+    bottom: 4px;
+   
+     animation: opacity 2s linear forwards;
+
+}
+
+
+  
+@keyframes opacity{
+    0%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-164px) translatey(0); 
+        opacity: 1;
+    }
+    40%{
+        transform: translateX(-164px) translatey(-280px) ;
+        opacity: 1;
+    }
+    70%{
+         transform: translateX(-164px) translateY(-280px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-164px) translateY(-280px);
+        opacity: 0;
+    }
+}  
+
+/* تبا سحقا شيت */
+
+ .E_letter .square1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--sec-color);
+    right: 5px;
+    top:5px;
+    animation: moveYX2 4s linear ;
+} 
+
+
+
+@keyframes moveYX2{
+    0%{
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translateX(-160px) translateY(0);
+    }
+    20%{
+        transform: translateX(-160px) translateY(140px);
+    }
+    30%{
+        transform: translateX(0) translateY(140px);
+    } 
+    40%{
+        transform: translateX(-160px) translateY(140px);
+    } 
+    50%{
+          transform: translateX(-160px) translateY(280px);
+    }
+    60%{
+         transform: translateX(0px) translateY(280px);
+    }
+    70%{
+        transform: translateX(-160px) translateY(280px);
+    }
+    80%{
+        transform: translateX(-160px) translateY(0);
+    }
+    90%{
+        transform: translateX(0px) translateY(0px);
+    }
+
+}
+

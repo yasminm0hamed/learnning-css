@@ -1,0 +1,4 @@
+ body>div:not(.no-need)>:nth-last-of-type(2){
+  color:rgb(255, 0, 0) ;
+}
+

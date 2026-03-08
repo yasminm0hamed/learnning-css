@@ -1,0 +1,48 @@
+/* :root{
+    --main-color:rgb(230, 69, 25);
+}
+h1{
+    width: 150px;
+    margin:auto;
+    background-color: var(--main-color);
+    color:aliceblue;
+    padding:40px 20px;
+    transform:skew(10deg,-10deg)
+
+} */
+
+
+h1{
+    width:150px;
+     padding:20px 10px;
+     margin: auto;
+     margin-top: 20px;;
+    background:#ff5722;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+h1::before,
+h1::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#ff5722;
+    z-index:-1;
+}
+
+h1::before{
+    transform: skewY(10deg);
+}
+
+h1::after{
+    transform: skewY(-10deg);
+}

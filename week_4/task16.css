@@ -1,0 +1,5 @@
+body>:first-child>:nth-child(n+2):nth-child(-n+5):not(h3){
+    color:brown
+}
+
+/* لقد هرمنا  */

@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 800px; 
+}
+
+div::before,
+div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    transition: transform 0.6s;
+}
+
+
+div::before {
+    content: "Front";
+    background-color: rgb(235, 0, 78);
+}
+
+
+div::after {
+    content: "Back";
+    background-color: rgb(0, 123, 255);
+    transform: rotateY(180deg);
+}
+
+
+div:hover::before {
+    transform: rotateY(180deg);
+}
+
+div:hover::after {
+    transform: rotateY(0deg);
+}

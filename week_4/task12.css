@@ -1,0 +1,4 @@
+body>:nth-child(n+4):nth-child(-n+6){
+    color:red;
+
+}

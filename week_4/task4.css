@@ -1,0 +1,56 @@
+:root{
+    --main-color:rgb(3, 122, 122);
+
+}
+
+h1{
+    width: 130px;
+    height: 70px;
+  
+    margin: auto;
+    color:aliceblue;
+    background-color:var(--main-color);
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::before{
+    content:" ";
+    position:absolute;
+    width: 130px;
+    height: 70px;
+    background-color:var(--main-color);
+    right:15px;
+    z-index: -1;
+    top:0;
+    transform: skewX(20deg);
+   
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    background-color:var(--main-color);
+    left:-30px;
+    transform: skewX(20deg);
+}
+
+
+
+/* تكليف3  */
+
+.class {
+  transform:  matrix(3, 0.2679, 0, 3, 20, 100);
+ transform: scalx(3px);
+ transform: skewY(0.2679rad);
+ transform: skewX(0);
+ transform: scaleY(3px);
+ transform: translateX(20px);
+ transform: translateY(100px);
+
+
+}
